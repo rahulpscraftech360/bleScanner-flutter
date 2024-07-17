@@ -28,4 +28,5 @@ flutter:
   assets:
 
   - assets/images/
-
+  - assets/images/icons8-golfer-50.png
+  - assets/images/icons8-golf-ball-50.png

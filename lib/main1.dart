@@ -283,7 +283,7 @@ class MyHomePageState extends State<MyHomePage> {
                             Container(
                               width: MediaQuery.sizeOf(context).width * 0.92,
                               decoration: BoxDecoration(
-                                boxShadow: [
+                                boxShadow: const [
                                   BoxShadow(
                                     blurRadius: 6.0,
                                     color: Color(0x4B1A1F24),
@@ -293,7 +293,7 @@ class MyHomePageState extends State<MyHomePage> {
                                     ),
                                   )
                                 ],
-                                gradient: LinearGradient(
+                                gradient: const LinearGradient(
                                   colors: [
                                     Color(0xFF00968A),
                                     Color(0xFFF2A384)
@@ -305,14 +305,15 @@ class MyHomePageState extends State<MyHomePage> {
                                 borderRadius: BorderRadius.circular(8.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 10.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          20.0, 20.0, 20.0, 0.0),
+                                      padding:
+                                          const EdgeInsetsDirectional.fromSTEB(
+                                              20.0, 20.0, 20.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -341,6 +342,12 @@ class MyHomePageState extends State<MyHomePage> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
+                                          Image.asset(
+                                            'assets/images/icons8-golfer-50.png',
+                                            width: 47.0,
+                                            height: 49.0,
+                                            fit: BoxFit.cover,
+                                          ),
                                           Text("Swing Speed",
                                               style: GoogleFonts.getFont(
                                                 'Lexend',
